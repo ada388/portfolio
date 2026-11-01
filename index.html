@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ada | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f1a;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1a1a2e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e94560;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #e94560;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #e94560;
+    }
+
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #e94560;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #aaa;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #e94560;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #ff6b81;
+    }
+
+    section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 32px;
+      color: #e94560;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about-text {
+      text-align: center;
+      font-size: 17px;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #1a1a2e;
+      border-radius: 12px;
+      padding: 25px;
+      border: 1px solid #333;
+      transition: 0.2s;
+    }
+
+    .project-card:hover {
+      border-color: #e94560;
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #e94560;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      color: #e94560;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      color: #e94560;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #555;
+      font-size: 14px;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Ada</div>
+    <nav>
+      <a href="#about">Rreth meje</a>
+      <a href="#projects">Projektet</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Përshëndetje, unë jam <span>Ada</span></h1>
+    <p>Filluese në programim. Po ndërtoj projekte dhe po mësoj çdo ditë për t’u bërë programuese.</p>
+    <a href="#projects" class="btn">Shiko Projektet</a>
+  </section>
+
+  <section id="about">
+    <h2>Rreth meje</h2>
+    <p class="about-text">
+      Jam nga Bilishti dhe sapo kam filluar rrugën time në programim. 
+      Po mësoj HTML, CSS dhe JavaScript duke ndërtuar projekte reale. 
+      Qëllimi im është të bëhem programuese dhe të gjej punën e parë në këtë fushë.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projektet e mia</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>Expense Tracker</h3>
+        <p>Aplikacion për të regjistruar dhe menaxhuar shpenzimet. Ruan të dhënat me LocalStorage.</p>
+        <a href="https://github.com/ada388/expense-tracker" target="_blank">Shiko në GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Aplikacion moti që tregon temperaturën, lagështinë dhe erën duke përdorur API reale.</p>
+        <a href="https://github.com/ada388/weather-app" target="_blank">Shiko në GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Quiz App</h3>
+        <p>Lojë me pyetje dhe përgjigje. Llogarit pikët dhe tregon rezultatin në fund.</p>
+        <a href="https://github.com/ada388/quiz-app" target="_blank">Shiko në GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>To-Do List</h3>
+        <p>Lista e detyrave ku mund të shtosh, shënosësh dhe fshish detyra.</p>
+        <a href="https://github.com/ada388/Lista-e-detyrave-" target="_blank">Shiko në GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <p>Nëse doni të kontaktoni me mua:</p>
+    <a href="https://github.com/ada388" target="_blank">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Email</a>
+  </section>
+
+  <footer>
+    © 2026 Ada — Të gjitha të drejtat e rezervuara
+  </footer>
+
+</body>
+</html>
